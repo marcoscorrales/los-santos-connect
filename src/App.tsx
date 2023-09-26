@@ -1,17 +1,16 @@
-import { UserCard } from "./sections/users/UserCard";
-import { useUsers } from "./sections/users/useUsers";
+
+import { Header } from "./components/Header/Header";
+import { Navbar } from "./components/Navbar/Navbar";
+import { Slider } from "./components/Slider/Slider";
 
 export function App() {
-	const users = useUsers();
-
 	return (
 		<div className="App">
-			<h3>⚡⚛️ Vite React Best Practices Template (by Codely)</h3>
-			<h2>Current users</h2>
-
-			{users.map((user) => (
-				<UserCard key={user.name} user={user} />
-			))}
+			<header>
+				<Header />
+				<Navbar />
+				<Slider />
+			</header>
 		</div>
 	);
 }

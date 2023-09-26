@@ -1,0 +1,29 @@
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.slider{
+    overflow: hidden;
+    padding: 20px 0;
+    background: grey;
+    white-space: nowrap;
+
+    &:hover .slider__container{
+        animation-play-state: paused;
+    }
+}
+
+.slider__container{
+    display: inline-flex;
+    animation: 20s slide infinite linear;
+}
+
+.slider__item{
+    height: 10px;
+    margin: 0 10px;
+}
