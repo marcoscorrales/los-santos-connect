@@ -9,7 +9,7 @@
 
 .slider{
     overflow: hidden;
-    padding: 20px 0;
+    padding: 20px 0 12px 0;
     background: grey;
     white-space: nowrap;
 
@@ -24,6 +24,8 @@
 }
 
 .slider__item{
+    display: flex;
+    align-items: center;
     height: 10px;
     margin: 0 10px;
 }
