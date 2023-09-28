@@ -6,6 +6,7 @@ import { FaPlus } from "react-icons/fa";
 export const Slider = () => {
 	return (
 		<div className={styles.slider}>
+			<p className={styles.slider__info}>No te lo pierdas</p>
 			<div className={styles.slider__container}>
 				{sliderData.map((item, index) => (
 					<p className={styles.slider__item} key={index}>
